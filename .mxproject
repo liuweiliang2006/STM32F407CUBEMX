@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=E:/M0/test_code/IIC/STM32F407_IIC/I2C_SLAVE/Inc
+HeaderPath=E:/M0/STM32F407_IIC/I2C_SLAVE/Inc
 HeaderFiles=gpio.h;i2c.h;stm32f4xx_it.h;stm32f4xx_hal_conf.h;main.h;
-SourcePath=E:/M0/test_code/IIC/STM32F407_IIC/I2C_SLAVE/Src
+SourcePath=E:/M0/STM32F407_IIC/I2C_SLAVE/Src
 SourceFiles=gpio.c;i2c.c;stm32f4xx_it.c;stm32f4xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]
