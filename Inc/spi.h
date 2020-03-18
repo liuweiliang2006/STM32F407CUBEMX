@@ -1,8 +1,8 @@
 /**
   ******************************************************************************
-  * File Name          : I2C.h
+  * File Name          : SPI.h
   * Description        : This file provides code for the configuration
-  *                      of the I2C instances.
+  *                      of the SPI instances.
   ******************************************************************************
   * @attention
   *
@@ -17,8 +17,8 @@
   ******************************************************************************
   */
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __i2c_H
-#define __i2c_H
+#ifndef __spi_H
+#define __spi_H
 #ifdef __cplusplus
  extern "C" {
 #endif
@@ -30,23 +30,25 @@
 
 /* USER CODE END Includes */
 
-extern I2C_HandleTypeDef hi2c1;
+extern SPI_HandleTypeDef hspi1;
+extern SPI_HandleTypeDef hspi2;
 
 /* USER CODE BEGIN Private defines */
-
+#define SPI_SIZE 150
 /* USER CODE END Private defines */
 
-void MX_I2C1_Init(void);
+void MX_SPI1_Init(void);
+void MX_SPI2_Init(void);
 
 /* USER CODE BEGIN Prototypes */
-void master_work(void);
-void slave_work(void);
+void spi_master_work(void);
+void spi_slave_work(void);
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus
 }
 #endif
-#endif /*__ i2c_H */
+#endif /*__ spi_H */
 
 /**
   * @}

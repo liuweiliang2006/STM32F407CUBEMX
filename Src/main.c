@@ -21,6 +21,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "i2c.h"
+#include "spi.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -89,21 +90,24 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_I2C1_Init();
-  MX_I2C2_Init();
+  MX_SPI1_Init();
+  MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
-	slave_work();
+//	slave_work();
+		spi_slave_work();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+		spi_master_work();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		master_work();
-		memset(slave_rec_buf,0,150);
-		memset(master_rec_buf,0,150);
+//		master_work();
+//		memset(slave_rec_buf,0,150);
+//		memset(master_rec_buf,0,150);
   }
   /* USER CODE END 3 */
 }

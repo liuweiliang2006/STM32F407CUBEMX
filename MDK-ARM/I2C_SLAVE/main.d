@@ -30,6 +30,8 @@ i2c_slave\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
 i2c_slave\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
 i2c_slave\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 i2c_slave\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+i2c_slave\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 i2c_slave\main.o: ../Inc/i2c.h
+i2c_slave\main.o: ../Inc/spi.h
 i2c_slave\main.o: ../Inc/gpio.h
 i2c_slave\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
